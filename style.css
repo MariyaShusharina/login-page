@@ -1,0 +1,113 @@
+:root {
+  --cobalt: rgb(0 122 255);
+  --dark-blue: rgb(15 112 218);
+  --white: rgb(255 255 255);
+}
+
+@font-face {
+  font-family: 'Poppins-400';
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-600';
+  src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100svh;
+}
+
+main {
+  height: 100svh;
+
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.hero-container {
+  width: 42%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(324.93deg, var(--cobalt) 0.74%, var(--dark-blue) 100%);
+}
+
+.hero-content {
+  padding: 4rem 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.motto {
+  max-width: 593px;
+
+  font-family: 'Poppins-400';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: -2%;
+  text-align: center;
+
+  color: var(--white);
+}
+
+.login-pics {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipse {
+  max-width: 593px;
+  max-height: 593px;
+}
+
+.phone-pics {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-pic {
+  position: absolute;
+}
+
+.phone-pic-front {
+  max-height: 630px;
+
+  z-index: 10;
+}
+
+.phone-pic-left {
+  margin-right: 12rem;
+  max-height: 485px;
+  z-index: 9;
+}
+
+.phone-pic-right {
+  margin-left: 12rem;
+  max-height: 485px;
+  z-index: 9;
+}
