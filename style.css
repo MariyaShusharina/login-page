@@ -34,7 +34,7 @@ main {
 }
 
 .hero-container {
-  width: 42%;
+  min-width: 42%;
   height: 100%;
 
   display: flex;
