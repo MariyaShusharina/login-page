@@ -2,6 +2,8 @@
   --cobalt: rgb(0 122 255);
   --dark-blue: rgb(15 112 218);
   --white: rgb(255 255 255);
+  --black: rgb(29 29 29);
+  --ash: rgb(45 55 72);
 }
 
 @font-face {
@@ -35,11 +37,11 @@ main {
   height: 100svh;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
 }
 
 .hero-container {
-  min-width: 42%;
+  min-width: 42.5%;
   height: 100%;
 
   display: flex;
@@ -51,17 +53,18 @@ main {
 }
 
 .hero-content {
-  padding: 4rem 0;
+  padding: 0 0 3rem;;
 
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  gap: 1rem;
+  gap: 6rem;
 }
 
 .motto {
+  margin: 0;
   max-width: 593px;
 
   font-family: 'Poppins400';
@@ -115,4 +118,236 @@ main {
   margin-left: 12rem;
   max-height: 485px;
   z-index: 9;
+}
+
+.login-container {}
+
+.login-content {
+  padding: 4rem 10rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 42px;
+  height: 48px;
+}
+
+.logo-text {
+  font-family: 'Poppins400';
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -2%;
+
+  color: var(--black);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.heading-1 {
+  margin: 0;
+
+  font-family: 'Poppins400';
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: -2%;
+
+  color: var(--black);
+}
+
+.paragraph {
+  margin: 0;
+
+  font-family: 'Poppins300';
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -2%;
+
+  color: var(--ash);
+}
+
+.form-container {
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  max-width: 750px;
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.45rem 2rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  font-family: 'Poppins300';
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -2%;
+
+  color: var(--ash);
+}
+
+.input-field {
+  padding: 0 0.75rem;
+
+  width: 20.75rem;
+  height: 3rem;
+
+  border: 0.1rem solid rgb(209 209 209);
+  border-radius: 5px;
+
+  font-family: 'Poppins300';
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -2%;
+
+  color: var(--ash);
+}
+
+.date-format {
+  font-size: 10px;
+}
+
+.input-date {
+  cursor: pointer;
+  background-image: url('./assets/svg/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 50% contain;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--ash);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0;
+}
+
+input[type="date"] {
+  appearance: textfield;
+}
+
+.checkboxes-container {
+  min-width: 22.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label-checkbox {
+  flex-direction: row;
+}
+
+.checkbox {
+  margin: 0 0.5rem 0 0;
+
+  width: 20px;
+  height: 20px;
+
+  border: 0.1rem solid rgb(209 209 209);
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--cobalt);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active, .link:visited {
+  color: var(--cobalt);
+}
+
+.forgot-password-container {
+  min-width: 22rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.button {
+  cursor: pointer;
+  appearance: none;
+
+  margin: 0.5rem 0;
+
+  width: 358px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: 'Poppins600';
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+
+.create-account {
+  background-color: var(--cobalt);
+  color: var(--white);
+}
+
+.signin-google {
+  gap: 0.75rem;
+  background-color: var(--ash);
+  color: var(--white);
+}
+
+.icon-google {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.prompt-container {
+  width: 100%;
+  min-height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-badges-container {
+  margin-top: 2.5rem;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.store-badge {
+  display: block;
 }
