@@ -5,12 +5,17 @@
 }
 
 @font-face {
-  font-family: 'Poppins-400';
+  font-family: 'Poppins300';
+  src: url(./assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins400';
   src: url(./assets/fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Poppins-600';
+  font-family: 'Poppins600';
   src: url(./assets/fonts/Poppins-SemiBold.ttf);
 }
 
@@ -59,7 +64,7 @@ main {
 .motto {
   max-width: 593px;
 
-  font-family: 'Poppins-400';
+  font-family: 'Poppins400';
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
