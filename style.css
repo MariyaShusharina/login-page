@@ -195,7 +195,7 @@ body {
 }
 
 .login-form {
-  max-width: 750px;
+  max-width: 752px;
 
   display: flex;
   flex-flow: row wrap;
@@ -270,6 +270,8 @@ input[type="date"] {
 }
 
 .checkbox {
+  cursor: pointer;
+
   margin: 0 0.5rem 0 0;
 
   width: 20px;
